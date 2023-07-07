@@ -3,7 +3,13 @@
 <mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
-	<flow name="mainFlow" doc:id="27f3cce1-07b4-43ed-bfac-2e8360d9cf54" />
-	<flow name="crypt_lFlow" doc:id="63517dbb-70cd-48cc-a283-ee4100e40a10" />
-	<flow name="decrypt_Flow" doc:id="d0890035-27ed-4160-b5ab-cffd711c8275" />
+	<flow name="mainFlow" doc:id="27f3cce1-07b4-43ed-bfac-2e8360d9cf54" >
+		<logger level="INFO" doc:name="Logger" doc:id="231365e0-21ef-4150-836d-6ca677851f27" />
+	</flow>
+	<flow name="crypt_lFlow" doc:id="63517dbb-70cd-48cc-a283-ee4100e40a10" >
+		<logger level="INFO" doc:name="Logger" doc:id="8d2fa37f-a701-4d69-83f9-45fe3399fadb" />
+	</flow>
+	<flow name="decrypt_Flow" doc:id="d0890035-27ed-4160-b5ab-cffd711c8275" >
+		<logger level="INFO" doc:name="Logger" doc:id="bfaca5e1-2c5a-4df2-bec3-15bf94d95771" />
+	</flow>
 </mule>
