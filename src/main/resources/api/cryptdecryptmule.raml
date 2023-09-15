@@ -1,4 +1,14 @@
----
-info:
-  title: cryptdecryptmule
-  version: 1.0.0
+#%RAML 1.0
+title: cryptdecryptmule
+version: 1.0.0
+types:
+  error: !include DataType/error.raml
+
+/:
+ get:
+   description: "return home page"
+   displayName: "Home"
+   protocols:
+     - HTTP
+   responses:
+     
