@@ -3,6 +3,11 @@
 <mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
-	<configuration-properties doc:name="Configuration properties" doc:id="4260eaf5-a697-4e7d-afa5-2312983f8359" file="properties/crypt-decrypt-mule-${MULE_ENV}.yaml" />
+	<configuration-properties doc:name="Configuration properties" doc:id="4260eaf5-a697-4e7d-afa5-2312983f8359" file="properties/env-${MULE_ENV}.yaml" />
 	<global-property doc:name="Global Property" doc:id="1505f9d2-c5fd-4ba3-80d9-6ce8d97da329" name="MULE_ENV" value="${MULE_ENV}" />
+	<error-handler name="globalError_Handler" doc:id="afef9c6a-c82c-4225-8ab0-34a0aa7647b9" >
+		<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="10423262-47b7-48e9-b7b0-a31ec0adb9c1" >
+			<logger level="INFO" doc:name="Logger" doc:id="577496cc-f3c5-4c07-a25f-ef8475f9fb59" />
+		</on-error-continue>
+	</error-handler>
 </mule>
